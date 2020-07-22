@@ -1,0 +1,5 @@
+source("LoadData.R")
+png(filename = "Plot2.png", width = 480, height = 480)
+plot(subdata$DateTime, subdata$Global_active_power, type="n", ylab = "Global Active Power (kilowatts)", xlab="")
+lines(subdata$DateTime, subdata$Global_active_power, type="l" )
+dev.off()
